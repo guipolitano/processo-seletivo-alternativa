@@ -1,0 +1,67 @@
+@import '../../util/variables.scss';
+
+.ui.grid .ui.card.video {
+    background-color: $base-color;
+    margin: 6px;
+    box-shadow: none;
+    *{
+        color: $field-text-color;
+    }
+
+    .extra{        
+        background-color: #063340;
+    }
+
+    .ui.form {
+      margin: 30px;
+      .field label {
+        color: $field-text-color;
+      }
+      .submit-btn {
+        text-align: center;
+      }
+    }
+    &.dark{
+      background-color: $base-color-dark;
+      box-shadow: 0px 0px 0px 2px $box-shadow-color;
+      .ui.form {
+        margin: 30px;
+        .field label {
+          color: $field-text-color;
+        }
+        .submit-btn {
+          text-align: center;
+        }
+      }
+      .extra{
+        background-color: #413f3e;
+    }
+    }
+  }
+  .ui.four.cards{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.likes-dislikes{
+    text-align: right;
+    i.icon.thumbs.up:hover{
+        &:hover{
+            color: $azul !important;
+        }
+        &.disabled{
+            pointer-events: none
+        }
+    }
+    i.icon.thumbs.down:hover{
+        &:hover{
+            color: $vermelho !important;
+        }
+        &.disabled{
+            pointer-events: none
+        }
+    }
+    span.likes{
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,27 @@
+@import '../../util/variables.scss';
+
+.ui.inverted.pointing.secondary.top.fixed.menu, .ui.secondary.inverted.pointing.menu .menu.transition.visible{
+    background-color: $base-color-menu;
+    &.dark{
+        background-color: $base-color-dark;
+    }
+}
+
+.ui.secondary.inverted.pointing.menu .item, 
+.ui.inverted.pointing.secondary.top.fixed.menu a
+    {
+    color: $text-color !important;
+    &.dark{
+        color: $text-color-dark !important;
+    }
+    &.active{
+        border-color:$text-color;
+        &.dark{
+            border-color:$text-color-dark;
+        }
+    }
+}
+.ui.secondary.inverted.pointing.menu .item.moon:hover{
+    color:orange !important;
+}
+

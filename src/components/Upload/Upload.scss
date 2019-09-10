@@ -1,0 +1,42 @@
+@import "../../util/variables.scss";
+
+.ui.grid .ui.card.upload-card {
+  background-color: $base-color;
+  box-shadow: none;
+  .ui.form {
+    margin: 30px;
+    .field label {
+      color: $field-text-color;
+    }
+    .submit-btn {
+      text-align: center;
+    }
+  }
+  &.dark {
+    background-color: $base-color-dark;
+    box-shadow: 0px 0px 0px 2px $box-shadow-color;
+    .ui.form {
+      margin: 30px;
+      .field label {
+        color: $field-text-color;
+      }
+      .submit-btn {
+        text-align: center;
+      }
+    }
+  }
+}
+.ui.attached.negative.message,
+.ui.negative.message {
+  box-shadow: none;
+}
+
+.ui.basic.label.upload-btn-label {
+  border: none;
+  background: none;
+  padding-left: 0px;
+}
+.ui.attached.positive.message,
+.ui.positive.message {
+  margin-bottom: 15px;
+}

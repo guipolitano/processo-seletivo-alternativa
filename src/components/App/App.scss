@@ -1,0 +1,18 @@
+@import '../../util/variables.scss';
+
+#root{
+    height:100%;
+}
+
+.container{
+    height:100%;
+    background: url(../../assets/bg-body.png) repeat left top;
+    &.dark{
+        background:none;
+        background-color: $background-color-dark !important;        
+    }
+    padding-top:80px;
+}
+.ui.grid{
+    justify-content: center;
+}
